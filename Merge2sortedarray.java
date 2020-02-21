@@ -5,8 +5,10 @@ public class Merge2sortedarray {
         int p1 = m -1;
         int p2 = n - 1;
         int p = nums1.length-1;
+        //nums1 = [1,2,3,0,0,0], m = 3
+        //nums2 = [2,5,6],       n = 3
         
-        while(p1>=0 && p2>=0){
+	    while(p1>=0 && p2>=0){
             if(nums1[p1] > nums2[p2]){
               nums1[p] = nums1[p1];  
                 p1--;
